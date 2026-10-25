@@ -1,0 +1,94 @@
+/* --- Professional Racing & IT Theme Stylesheet --- */
+:root {
+    --bg-color: #0b0f19;         /* Latar belakang biru gelap malam */
+    --card-bg: #131b2e;          /* Warna kad / panel */
+    --accent-blue: #2563eb;      /* Biru lumba utama */
+    --accent-red: #ef4444;       /* Merah aksen menyerlah */
+    --text-main: #f8fafc;        /* Putih lembut untuk teks */
+    --text-muted: #94a3b8;       /* Kelabu pudar */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header Bergaya Khas */
+header {
+    background: linear-gradient(135deg, rgba(11,15,25,0.9), rgba(37,99,235,0.25)), url('image_2.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 90px 20px;
+    border-bottom: 4px solid var(--accent-red);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--text-main);
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+}
+
+header p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #070a10;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--accent-blue);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    margin: 0 18px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: var(--accent-red);
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Kad & Seksyen */
+.section {
+    background-color: var(--card-bg);
+    border-left: 5px solid var(--accent-blue);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(37, 9
