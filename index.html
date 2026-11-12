@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page of Eizzedin Afkar</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Susunan sebelah-menyebelah untuk Gambar & Quick Snapshot di bahagian atas */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Susunan sebelah-menyebelah untuk Gambar & Info Biasa di bahagian atas */
         .top-profile-grid {
             display: flex;
             flex-wrap: wrap;
@@ -32,6 +36,21 @@
             flex: 1;
             min-width: 280px;
         }
+
+        .snapshot-box p {
+            margin: 6px 0;
+        }
+
+        .btn-top {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: var(--accent-blue, #007bff);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -52,7 +71,7 @@
 
     <div class="container">
         
-        <!-- Gambar Kecil + Quick Snapshot terus di bahagian paling atas -->
+        <!-- Gambar Kecil + Info Biasa (Tanpa Table) di bahagian atas -->
         <div class="section" id="quick-snapshot">
             <div class="top-profile-grid">
                 
@@ -61,49 +80,30 @@
                     <img src="image_4.png" alt="Eizzedin Afkar">
                 </div>
 
-                <!-- Jadual Quick Snapshot di sebelah gambar -->
+                <!-- Susunan Teks Biasa (Tiada Table) -->
                 <div class="snapshot-box">
                     <h2 style="margin-top: 0;">At a Glance: Profile Snapshot</h2>
-                    <table>
-                        <tr>
-                            <th>Attribute</th>
-                            <th>Details</th>
-                        </tr>
-                        <tr>
-                            <td>Full Name</td>
-                            <td>Eizzedin Afkar Bin Azil Hizaq</td>
-                        </tr>
-                        <tr>
-                            <td>Age</td>
-                            <td>21 Years Old</td>
-                        </tr>
-                        <tr>
-                            <td>Hometown</td>
-                            <td>Paka, Terengganu</td>
-                        </tr>
-                        <tr>
-                            <td>Current Program</td>
-                            <td>Bachelor in Information Technology and Business Management</td>
-                        </tr>
-                        <tr>
-                            <td>Institution</td>
-                            <td>University College TATI (UC TATI)</td>
-                        </tr>
-                        <tr>
-                            <td>Extracurricular</td>
-                            <td>Racing Driver for UC TATI Formula Student Malaysia</td>
-                        </tr>
-                    </table>
+                    <p><strong>Full Name:</strong> Eizzedin Afkar Bin Azil Hizaq</p>
+                    <p><strong>Age:</strong> 21 Years Old</p>
+                    <p><strong>Hometown:</strong> Paka, Terengganu</p>
+                    <p><strong>Current Program:</strong> Bachelor in Information Technology and Business Management</p>
+                    <p><strong>Institution:</strong> University College TATI (UC TATI)</p>
+                    <p><strong>Extracurricular:</strong> Racing Driver for UC TATI Formula Student Malaysia</p>
                 </div>
 
             </div>
         </div>
 
-        <!-- Teks Pengenalan di bawah -->
+        <!-- Teks Pengenalan di bawah + Button terus ke atas -->
         <div class="section">
             <h2 style="border-bottom: none; text-align: center;">Welcome to My Professional Portfolio</h2>
             <p style="text-align: left;">Welcome to my official web space! I am a 21-year-old undergraduate student originating from <strong>Paka, Terengganu</strong>. My journey bridges high-performance motorsport racing with the logical world of information technology and business management.</p>
-            <p style="text-align: left;">Explore the navigation links above or jump back up to my <a href="#quick-snapshot" style="color: var(--accent-blue);">quick snapshot table</a> above to learn more about my profile.</p>
+            <p style="text-align: left;">Explore the navigation links above to learn more about my background, technical skills, and motorsport journey.</p>
+            
+            <!-- Button untuk terus naik ke bahagian atas halaman -->
+            <div style="text-align: center;">
+                <a href="#top" class="btn-top">↑ Back to Top (Quick Snapshot)</a>
+            </div>
         </div>
 
     </div>
